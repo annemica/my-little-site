@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('backgroundmoose.png'); /* Укажи имя своей картинки */
-    background-size: cover; /* Картинка растянется на весь экран */
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Предотвращает повторение изображения */
+    background-image: url('backgroundmoose.png'); /* Past a picture name */
+    background-size: cover; /* The picture will stretch to the full screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
     font-family: "Assistant", sans-serif;
     font-optical-sizing: auto;
     font-size: 16px;
