@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('backgroundmoose.png'); /* Укажи имя своей картинки */
+    background-size: cover; /* Картинка растянется на весь экран */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Предотвращает повторение изображения */
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #442b0065;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+.photo-section {
+    margin-bottom: 20px;
+}
+
+.photo-section p {
+    color: #333;
+    font-size: 18px;
+}
+
+.text-section p {
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #e5ac3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #df9500;
+}
