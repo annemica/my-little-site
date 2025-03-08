@@ -14,7 +14,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -25,15 +26,19 @@ body {
     width: 300px;
     max-width: 90%;
     box-sizing: border-box;
+    height: fit-content;
 }
 
 .photo-section {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .photo-section img {
     width: 100%;
     border-radius: 10px;
+    object-fit: contain;
+    max-height: 150px;
 }
 
 .photo-section p {
@@ -46,7 +51,7 @@ body {
     font-family: 'Assistant', sans-serif;
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -55,14 +60,14 @@ body {
     font-family: 'Assistant', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .button {
     display: block;
     width: 80%;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 5px auto;
+    padding: 8px;
     background-color: #e5ac3a;
     color: white;
     text-decoration: none;
@@ -79,22 +84,30 @@ body {
 @media (min-width: 1024px) {
     .container {
         width: 500px;
-        padding: 30px;
-        max-width: 90%;
+        padding: 30px 50px;
+    }
+
+    .photo-section img {
+        max-height: 100%;
+        border-radius: 10px;
     }
 
     .text-section h1 {
-        font-size: 24px;
+        font-size: 20px;
+        margin-bottom: 8px;
     }
 
     .text-section p {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 8px;
+        margin: 20px;
     }
 
     .button {
         width: 70%;
-        font-size: 20px;
-        padding: 12px;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px auto;
     }
 }
 
@@ -109,22 +122,25 @@ body {
     }
 
     .photo-section img {
-        max-height: 200px;
-        object-fit: cover;
+        max-height: 150px;
+        object-fit: contain;
     }
 
     .photo-section h1 {
         font-size: 18px;
+        margin-bottom: 8px;
     }
 
     .text-section p {
         font-size: 14px;
+        margin-bottom: 8px;
     }
 
     .button {
         width: 90%;
         font-size: 16px;
-        padding: 12px;
+        padding: 8px;
+        margin: 5px auto;
     }
 }
 
@@ -138,17 +154,24 @@ body {
         padding: 10px;
     }
 
+    .photo-section img {
+        max-height: 120px;
+    }
+
     .text-section h1 {
         font-size: 16px;
+        margin-bottom: 6px;
     }
 
     .text-section p {
         font-size: 13px;
+        margin-bottom: 6px;
     }
 
     .button {
         width: 95%;
         font-size: 14px;
-        padding: 10px;
+        padding: 6px;
+        margin: 4px auto;
     }
 }
