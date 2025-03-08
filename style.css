@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     background-image: url('backgroundmoose.png'); /* Past a picture name */
     background-size: cover; /* The picture will stretch to the full screen */
     background-position: center; /* Center the image */
@@ -11,6 +11,7 @@ body {
     font-weight: 600;
     font-style: normal;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -31,7 +32,7 @@ body {
 }
 
 .photo-section img {
-    margin-bottom: 20px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -79,6 +80,7 @@ body {
     .container {
         width: 500px;
         padding: 30px;
+        max-width: 90%;
     }
 
     .text-section h1 {
@@ -98,8 +100,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        min-height: 100vh;
-        padding: 10px;
+        padding: 10px 0;
     }
 
     .container {
@@ -129,7 +130,7 @@ body {
 
 @media (max-width: 480px) {
     body {
-        padding: 5px;
+        padding: 5px 0;
     }
 
     .container {
