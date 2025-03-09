@@ -86,6 +86,7 @@ body {
     .container {
         width: 500px;
         padding: 30px 50px;
+        margin-bottom: 50px;
     }
 
     .photo-section img {
@@ -94,12 +95,12 @@ body {
     }
 
     .text-section h1 {
-        font-size: 20px;
-        margin-bottom: 8px;
+        font-size: 24px;
+        margin-bottom: -10px;
     }
 
     .text-section p {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 8px;
         margin: 20px;
     }
@@ -151,12 +152,13 @@ body {
     }
 
     .container {
-        width: 80%;
+        width: 100%;
         padding: 15px;
         margin-bottom: 80px;
     }
 
     .photo-section {
+        max-width: 240px;
         width: 90%;
         margin: auto;
     }
@@ -167,19 +169,28 @@ body {
     }
 
     .text-section h1 {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: -10px;
     }
 
     .text-section p {
-        font-size: 13px;
+        font-size: 15px;
         margin-bottom: 0px;
     }
 
+    .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: -5px;
+        margin-bottom: -15px;
+    }
+
+
     .button {
         width: 95%;
-        font-size: 16px;
-        padding: 6px;
-        margin: 10px auto;
+        font-size: 20px;
+        padding: 20px 6px;
+        margin: 20px auto;
     }
 }
