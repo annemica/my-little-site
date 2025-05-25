@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 20px 0;
-    background-image: url('backgroundmoose.png'); /* Past a picture name */
-    background-size: cover; /* The picture will stretch to the full screen */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevents image repetition */
-    font-family: "Assistant", sans-serif;
+    background-image: url('backgroundmoose.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Assistant, sans-serif;
     font-optical-sizing: auto;
     font-size: 16px;
     font-weight: 600;
@@ -14,19 +14,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh; /* Изменено с height на min-height для предотвращения обрезки */
 }
 
 .container {
-    background-color: #442b0065;
+    background-color: rgba(68, 43, 0, 0.4); /* Заменено #442b0065 на rgba */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     width: 300px;
     max-width: 90%;
     box-sizing: border-box;
-    height: fit-content;
 }
 
 .photo-section {
@@ -45,23 +43,31 @@ body {
 .photo-section p {
     color: #333;
     font-size: 18px;
+    margin: 0;
 }
 
 .text-section h1 {
     color: #f0f0f0;
-    font-family: 'Assistant', sans-serif;
+    font-family: Assistant, sans-serif;
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     text-align: center;
 }
 
 .text-section p {
     color: #f0f0f0;
-    font-family: 'Assistant', sans-serif;
+    font-family: Assistant, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 10px;
 }
 
 .button {
@@ -73,7 +79,7 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 20px;
-    font-family: 'Assistant', sans-serif;
+    font-family: Assistant, sans-serif;
     font-weight: 600;
     font-size: 18px;
 }
@@ -86,23 +92,20 @@ body {
     .container {
         width: 500px;
         padding: 30px 50px;
-        margin-bottom: 50px;
     }
 
     .photo-section img {
-        max-height: 100%;
-        border-radius: 10px;
+        max-height: 200px; /* Увеличено для больших экранов */
     }
 
     .text-section h1 {
         font-size: 24px;
-        margin-bottom: -10px;
+        margin-bottom: 10px;
     }
 
     .text-section p {
         font-size: 18px;
-        margin-bottom: 8px;
-        margin: 20px;
+        margin: 0 20px 10px;
     }
 
     .button {
@@ -123,19 +126,27 @@ body {
         padding: 15px;
     }
 
-    .photo-section img {
-        max-height: 150px;
-        object-fit: contain;
+    .photo-section {
+        max-width: 240px;
+        margin: auto;
     }
 
-    .photo-section h1 {
+    .photo-section img {
+        max-height: 150px;
+    }
+
+    .text-section h1 {
         font-size: 18px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .text-section p {
         font-size: 14px;
         margin-bottom: 8px;
+    }
+
+    .buttons-container {
+        margin-top: 10px;
     }
 
     .button {
@@ -154,83 +165,36 @@ body {
     .container {
         width: 95%;
         padding: 15px;
-        margin-bottom: 80px;
     }
 
     .photo-section {
         max-width: 240px;
-        width: 90%;
         margin: auto;
     }
 
     .photo-section img {
-        max-height: 100%;
-        margin-bottom: -10px;
+        max-height: 120px; /* Уменьшено для маленьких экранов */
     }
 
     .text-section h1 {
-        font-size: 18px;
-        margin-bottom: -10px;
+        font-size: 16px;
+        margin-bottom: 8px;
     }
 
     .text-section p {
-        font-size: 15px;
-        margin-bottom: 0px;
+        font-size: 14px;
+        margin-bottom: 8px;
     }
 
     .buttons-container {
         display: block;
         margin-top: 10px;
-        margin-bottom: 0;
     }
 
     .button {
         width: 95%;
-        font-size: 20px;
-        padding: 20px 6px;
+        font-size: 16px;
+        padding: 10px;
         margin: 10px auto;
     }
 }
-
-    .container {
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 80px;
-    }
-
-    .photo-section {
-        max-width: 240px;
-        width: 90%;
-        margin: auto;
-    }
-
-    .photo-section img {
-        max-height: 100%;
-        margin-bottom: -10px;
-    }
-
-    .text-section h1 {
-        font-size: 18px;
-        margin-bottom: -10px;
-    }
-
-    .text-section p {
-        font-size: 15px;
-        margin-bottom: 0px;
-    }
-
-    .buttons-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        margin-top: -5px;
-        margin-bottom: -15px;
-    }
-
-
-    .button {
-        width: 95%;
-        font-size: 20px;
-        padding: 20px 6px;
-        margin: 20px auto;
-    }
